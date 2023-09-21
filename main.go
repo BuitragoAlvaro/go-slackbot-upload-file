@@ -9,8 +9,8 @@ import (
 
 func main() {
 
-	os.Setenv("SLACK_BOT_TOKEN", "xoxb-5897653138352-5923797914325-AsFFdWQ4JX4X9vzGlCwNPVMK")
-	os.Setenv("CHANNEL_ID", "C05SDK74NGY")
+	os.Setenv("SLACK_BOT_TOKEN", "")
+	os.Setenv("CHANNEL_ID", "")
 	api := slack.New(os.Getenv("SLACK_BOT_TOKEN"))
 	channelArr := []string{os.Getenv("CHANNEL_ID")}
 	fileArr := []string{"Go_Succinctly.pdf"}
